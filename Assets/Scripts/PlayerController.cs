@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -53,5 +54,13 @@ public class PlayerController : MonoBehaviour
         //velocité=direction*vitesse*inclinaison du baton de joie
         rb.velocity = moveDirection * moveSpeed;
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Door")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
