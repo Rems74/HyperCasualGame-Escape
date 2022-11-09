@@ -1730,11 +1730,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -692.3
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -2112.4
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_LocalScale.x
@@ -1778,7 +1778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 19.900024
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738822, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2300,6 +2300,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 286673173}
     m_Modifications:
     - target: {fileID: 884491476908947362, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: playerRef
+      value: 
+      objectReference: {fileID: 1910007785}
+    - target: {fileID: 884491476908947362, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: batonDeJoie
       value: 
       objectReference: {fileID: 854476037}
@@ -2761,6 +2765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 286673173}
     m_Modifications:
+    - target: {fileID: 884491476908947362, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: playerRef
+      value: 
+      objectReference: {fileID: 1910007785}
     - target: {fileID: 884491476908947362, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: batonDeJoie
       value: 
