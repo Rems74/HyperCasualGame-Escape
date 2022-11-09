@@ -7,13 +7,15 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] DynamicJoystick joystick;
 
+    private bool isDead = false;
+
     Vector3 moveDirection;
     Vector3 aimDirection;
     float moveSpeed = 0;
     [SerializeField] float speedMax = 10f;
     [SerializeField] float acceleration = 0.1f;
     [SerializeField] float decceleration = 0.1f;
-    [SerializeField] float smoothRotation = 0.1f;
+    //[SerializeField] float smoothRotation = 0.1f;
     [SerializeField] LayerMask enviroLayerMask;
 
     //cache
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,16 +54,25 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //velocité=direction*vitesse*inclinaison du baton de joie
-        rb.velocity = moveDirection * moveSpeed;
-
+        if(isDead == false)
+        {
+            //velocité=direction*vitesse*inclinaison du baton de joie
+            rb.velocity = moveDirection * moveSpeed;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Door")
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+
+    public void GameOver()
+    {
+        isDead = true;
+        rb.velocity = new Vector3 (0, 0, 0);
+    }
+
 }

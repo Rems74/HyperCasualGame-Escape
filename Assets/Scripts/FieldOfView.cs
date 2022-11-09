@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class FieldOfView : MonoBehaviour
 {
+    [SerializeField] GameObject menuGameOver;
+    [SerializeField] GameObject batonDeJoie;
+
     public float radius;
     [Range(0, 360)]
     public float angle;
@@ -42,7 +45,9 @@ public class FieldOfView : MonoBehaviour
     {
         if(canSeePlayer == true)
         {
-            SceneManager.LoadScene("GameOver");
+            menuGameOver.SetActive(true);
+            Destroy(batonDeJoie);
+            FindObjectOfType<PlayerController>().GameOver();
         }
     }
 
