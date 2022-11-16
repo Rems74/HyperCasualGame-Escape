@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -29,25 +30,31 @@ public class FieldOfView : MonoBehaviour
     public float viewRadius;
     public LayerMask obstacleMask;
 
+    [SerializeField] Material lightColor;
+
 
     private void Start()
     {
+        lightColor.SetColor("_Color", new Color(1, 1, 0));
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-
+        
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
-       
-    }
+
+     }
 
     private void Update()
     {
         if(canSeePlayer == true)
         {
+            lightColor.SetColor("_Color", new Color(200, 0, 0));
+            //Light.material.SetColor("_Color", new Color(200, 0, 0));
             menuGameOver.SetActive(true);
             Destroy(batonDeJoie);
             FindObjectOfType<PlayerController>().GameOver();
+            GetComponent<NavMeshAgent>().speed = 0;
         }
     }
 

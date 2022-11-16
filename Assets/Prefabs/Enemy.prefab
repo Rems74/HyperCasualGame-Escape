@@ -193,9 +193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuGameOver: {fileID: 0}
+  batonDeJoie: {fileID: 0}
   radius: 7
   angle: 85
-  playerRef: {fileID: 0}
+  playerRef: {fileID: 4158748380365607310, guid: 26a5645d012c8be49b0e314ae5122a45, type: 3}
   targetMask:
     serializedVersion: 2
     m_Bits: 64
@@ -212,6 +213,7 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
+  lightColor: {fileID: 2100000, guid: a4e321661e6662046a70dd09c5bcce32, type: 2}
 --- !u!195 &884491476908947390
 NavMeshAgent:
   m_ObjectHideFlags: 0
