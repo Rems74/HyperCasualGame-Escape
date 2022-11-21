@@ -32,6 +32,8 @@ public class FieldOfView : MonoBehaviour
 
     [SerializeField] Material lightColor;
 
+    [SerializeField] AudioClip ring;
+
 
     private void Start()
     {
@@ -55,6 +57,7 @@ public class FieldOfView : MonoBehaviour
             Destroy(batonDeJoie);
             FindObjectOfType<PlayerController>().GameOver();
             GetComponent<NavMeshAgent>().speed = 0;
+            GetComponent<AudioSource>().PlayOneShot(ring);
         }
     }
 

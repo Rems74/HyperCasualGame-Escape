@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
+
+    [SerializeField] AudioClip ding;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +18,9 @@ public class Key : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            GetComponent<AudioSource>().PlayOneShot(ding);
             Destroy(gameObject);
+            
         }
     }
 
