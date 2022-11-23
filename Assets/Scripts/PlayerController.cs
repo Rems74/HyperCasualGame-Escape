@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] DynamicJoystick joystick;
+    [SerializeField] FixedJoystick joystick;
 
     private bool isDead = false;
     private Animator m_Animator;
