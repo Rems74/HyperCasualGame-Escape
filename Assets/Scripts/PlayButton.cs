@@ -14,4 +14,9 @@ public class PlayButton : MonoBehaviour
     {
         SceneManager.LoadScene("SelectLevel");
     }
+
+    public void ButtonMenu()
+    {
+        SceneManager.LoadScene("MenuStart");
+    }
 }

@@ -38,7 +38,6 @@ public class Door : MonoBehaviour
     {
         Key = GameObject.FindGameObjectsWithTag("Key");
       
-        print(DoorOpen.material.color);
         if (Key.Length == 0 && isOpen == false)
         {
             isOpen = true;

@@ -196,7 +196,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61559332}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -334,7 +334,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130227129}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -739,7 +739,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398265686}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -836,7 +836,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413899850}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -954,7 +954,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456131921}
-  m_LocalRotation: {x: 0.6801031, y: 0.00000017512575, z: -0.000000162462, w: 0.73311645}
+  m_LocalRotation: {x: 0.6801031, y: -0.0000003237765, z: 0.00000030036347, w: 0.73311645}
   m_LocalPosition: {x: -0.00999999, y: 48.34, z: 3.2600002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1015,7 +1015,7 @@ PrefabInstance:
       objectReference: {fileID: 240640103}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.size
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1040,15 +1040,15 @@ PrefabInstance:
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[5]
       value: 
-      objectReference: {fileID: 1700599299}
+      objectReference: {fileID: 1279817607}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[6]
       value: 
-      objectReference: {fileID: 983322707}
+      objectReference: {fileID: 1700599299}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[7]
       value: 
-      objectReference: {fileID: 271719740}
+      objectReference: {fileID: 983322707}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[8]
       value: 
@@ -1056,21 +1056,29 @@ PrefabInstance:
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1799319862}
+      objectReference: {fileID: 271719740}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[10]
       value: 
-      objectReference: {fileID: 2061811549}
+      objectReference: {fileID: 1700599299}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[11]
       value: 
-      objectReference: {fileID: 1708780453}
+      objectReference: {fileID: 1799319862}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1708780453}
+      objectReference: {fileID: 2061811549}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[13]
+      value: 
+      objectReference: {fileID: 1799319862}
+    - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: waypoints.Array.data[14]
+      value: 
+      objectReference: {fileID: 1708780453}
+    - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: waypoints.Array.data[15]
       value: 
       objectReference: {fileID: 1799319862}
     - target: {fileID: 5066878620204917960, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
@@ -1393,7 +1401,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808193912}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1560,7 +1568,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811488653}
-  m_LocalRotation: {x: 0.6801031, y: 0.00000017512575, z: -0.000000162462, w: 0.73311645}
+  m_LocalRotation: {x: 0.6801031, y: -0.0000003237765, z: 0.00000030036347, w: 0.73311645}
   m_LocalPosition: {x: -0.00999999, y: 48.34, z: 3.2600002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1771,7 +1779,7 @@ PrefabInstance:
       objectReference: {fileID: 240640103}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.size
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1784,23 +1792,23 @@ PrefabInstance:
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 271719740}
+      objectReference: {fileID: 1700599299}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1700599299}
+      objectReference: {fileID: 271719740}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[4]
       value: 
-      objectReference: {fileID: 1279817607}
+      objectReference: {fileID: 1700599299}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[5]
       value: 
-      objectReference: {fileID: 2108550278}
+      objectReference: {fileID: 1279817607}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[6]
       value: 
-      objectReference: {fileID: 957063341}
+      objectReference: {fileID: 2108550278}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[7]
       value: 
@@ -1808,17 +1816,29 @@ PrefabInstance:
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1799319862}
+      objectReference: {fileID: 957063341}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[9]
       value: 
-      objectReference: {fileID: 2061811549}
+      objectReference: {fileID: 1279817607}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1708780453}
+      objectReference: {fileID: 1799319862}
     - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: waypoints.Array.data[11]
+      value: 
+      objectReference: {fileID: 2061811549}
+    - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: waypoints.Array.data[12]
+      value: 
+      objectReference: {fileID: 1799319862}
+    - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: waypoints.Array.data[13]
+      value: 
+      objectReference: {fileID: 1708780453}
+    - target: {fileID: 3504077242407735439, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: waypoints.Array.data[14]
       value: 
       objectReference: {fileID: 1799319862}
     - target: {fileID: 5066878620204917960, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
@@ -2180,7 +2200,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108288710}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2277,7 +2297,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176755331}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2506,7 +2526,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459683310}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2697,7 +2717,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501938113}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2794,7 +2814,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506197421}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2891,7 +2911,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525726363}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2988,7 +3008,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564395016}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3116,7 +3136,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706537353}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3244,7 +3264,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783369473}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3474,7 +3494,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817761484}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3602,7 +3622,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909277302}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: d8505fc5e2617e64fbda790d8a5916b6, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 67a539c8bac637e49aa9efbbfb04987b, type: 2}
 --- !u!1 &103243714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5335349620448871911, guid: 0fa43dec0155c764382eb4d09f93b897, type: 3}
@@ -442,7 +442,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754955051}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -818,7 +818,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.6801031, y: 0.00000017512575, z: -0.000000162462, w: 0.73311645}
+  m_LocalRotation: {x: 0.6801031, y: -0.0000003237765, z: 0.00000030036347, w: 0.73311645}
   m_LocalPosition: {x: -0.00999999, y: 48.34, z: 3.2600002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1002,7 +1002,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283529663}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1202,7 +1202,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312152297}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1352,7 +1352,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511100025}
-  m_LocalRotation: {x: 0.6801031, y: 0.00000017512575, z: -0.000000162462, w: 0.73311645}
+  m_LocalRotation: {x: 0.6801031, y: -0.0000003237765, z: 0.00000030036347, w: 0.73311645}
   m_LocalPosition: {x: -0.00999999, y: 48.34, z: 3.2600002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1499,7 +1499,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578023964}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1617,7 +1617,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673657443}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e47d1a67975bdcc488a8e3957946049e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2186,6 +2186,14 @@ PrefabInstance:
     - target: {fileID: 5832424587478735892, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832424587478735892, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102196042115909129, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f93429ed51f512408da5212ba2c3f99, type: 3}

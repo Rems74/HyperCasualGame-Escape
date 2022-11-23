@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float decceleration = 0.1f;
     //[SerializeField] float smoothRotation = 0.1f;
     [SerializeField] LayerMask enviroLayerMask;
+    private Animator m_Animator;
 
     //cache
 
@@ -31,7 +32,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_Animator = GetComponentInChildren<Animator>();
+        m_Animator.GetComponent<Animator>().enabled = false;
     }
 
     // Update is called once per frame
@@ -43,11 +45,25 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection = new Vector3(joystick.Direction.x, 0, joystick.Direction.y).normalized;
             moveSpeed = Mathf.Lerp(moveSpeed, speedMax, acceleration) * joystick.Direction.magnitude;
+            m_Animator.GetComponent<Animator>().enabled = true;
+            if (joystick.Direction.y >= 0)
+            {
+                transform.eulerAngles = new Vector3(0, joystick.Direction.x * 90, 0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, (joystick.Direction.x * -90) + 180, 0);
+            }
+
+            
+            
         }
 
         else
         {
             moveSpeed = Mathf.Lerp(moveSpeed, 0, decceleration);
+            m_Animator.GetComponent<Animator>().enabled = false;
+
         }
         aimDirection = moveDirection;
     }
