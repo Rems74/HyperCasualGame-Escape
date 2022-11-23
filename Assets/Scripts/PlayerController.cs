@@ -8,18 +8,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] DynamicJoystick joystick;
 
     private bool isDead = false;
+    private Animator m_Animator;
+    float moveSpeed = 0;
 
     Vector3 moveDirection;
     Vector3 aimDirection;
-    float moveSpeed = 0;
+
     [SerializeField] float speedMax = 10f;
     [SerializeField] float acceleration = 0.1f;
     [SerializeField] float decceleration = 0.1f;
-    //[SerializeField] float smoothRotation = 0.1f;
     [SerializeField] LayerMask enviroLayerMask;
-    private Animator m_Animator;
-
-    //cache
+    [SerializeField] AudioClip music;
 
     Rigidbody rb;
 
@@ -34,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         m_Animator = GetComponentInChildren<Animator>();
         m_Animator.GetComponent<Animator>().enabled = false;
+        GetComponent<AudioSource>().PlayOneShot(music);
     }
 
     // Update is called once per frame
